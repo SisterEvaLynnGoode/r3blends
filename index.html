@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>r3.blends — Custom Hair Designs · Oakland</title>
+  <meta name="description" content="Custom hair designs and precision fades in East Oakland, CA. Book your appointment with r3.blends." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- GSAP + ScrollTrigger + Lenis via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <video
+      class="hero__video"
+      src="hero.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    ></video>
+    <div class="hero__overlay" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">East Oakland, CA</p>
+      <h1 class="hero__title">r3.blends</h1>
+      <p class="hero__tagline">Custom hair designs · Oakland</p>
+      <a
+        class="hero__cta"
+        href="https://ig.me/m/r3.blendss"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Book Appointment</a>
+    </div>
+
+    <!-- Hours + booking bar overlaid at bottom of hero -->
+    <!-- ↓↓↓ EDIT HOURS HERE ↓↓↓ -->
+    <div class="hero__info-bar">
+      <div class="hero__info-hours">
+        <div class="hero__hours-block">
+          <span class="hero__hours-days">Tue – Sat</span>
+          <span class="hero__hours-time">10am – 7pm</span>
+        </div>
+        <div class="hero__hours-sep" aria-hidden="true"></div>
+        <div class="hero__hours-block">
+          <span class="hero__hours-days">Sun</span>
+          <span class="hero__hours-time">11am – 5pm</span>
+        </div>
+        <div class="hero__hours-sep" aria-hidden="true"></div>
+        <div class="hero__hours-block">
+          <span class="hero__hours-days">Mon</span>
+          <span class="hero__hours-time hero__hours-time--closed">Closed</span>
+        </div>
+      </div>
+      <!-- ↑↑↑ END HOURS ↑↑↑ -->
+      <a
+        class="hero__book-link"
+        href="https://ig.me/m/r3.blendss"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Book an appointment
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+          <path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero__scroll-hint" aria-hidden="true">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       HOURS
+       — Edit days/times in the <td> cells below
+  ═══════════════════════════════════════════ -->
+  <section class="section hours" id="hours">
+    <div class="section__inner">
+      <h2 class="section__heading">Hours</h2>
+      <div class="hours__grid">
+        <!-- ↓↓↓ EDIT HOURS HERE ↓↓↓ -->
+        <div class="hours__row">
+          <span class="hours__day">Monday</span>
+          <span class="hours__time hours__time--closed">Closed</span>
+        </div>
+        <div class="hours__row">
+          <span class="hours__day">Tuesday</span>
+          <span class="hours__time">10:00 AM – 7:00 PM</span>
+        </div>
+        <div class="hours__row">
+          <span class="hours__day">Wednesday</span>
+          <span class="hours__time">10:00 AM – 7:00 PM</span>
+        </div>
+        <div class="hours__row">
+          <span class="hours__day">Thursday</span>
+          <span class="hours__time">10:00 AM – 7:00 PM</span>
+        </div>
+        <div class="hours__row">
+          <span class="hours__day">Friday</span>
+          <span class="hours__time">10:00 AM – 7:00 PM</span>
+        </div>
+        <div class="hours__row">
+          <span class="hours__day">Saturday</span>
+          <span class="hours__time">10:00 AM – 7:00 PM</span>
+        </div>
+        <div class="hours__row">
+          <span class="hours__day">Sunday</span>
+          <span class="hours__time">11:00 AM – 5:00 PM</span>
+        </div>
+        <!-- ↑↑↑ END HOURS ↑↑↑ -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES & PRICING
+       — Edit service names/prices in the cards below
+  ═══════════════════════════════════════════ -->
+  <section class="section services" id="services">
+    <div class="section__inner">
+      <h2 class="section__heading">Services</h2>
+      <div class="services__grid">
+
+        <!-- ↓↓↓ EDIT SERVICES HERE ↓↓↓ -->
+        <div class="service-card" data-tilt>
+          <div class="service-card__icon">✂</div>
+          <h3 class="service-card__name">Cut</h3>
+          <p class="service-card__price">$35</p>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-card__icon">⚡</div>
+          <h3 class="service-card__name">Cut + Design</h3>
+          <p class="service-card__price">$55</p>
+        </div>
+
+        <div class="service-card service-card--accent" data-tilt>
+          <div class="service-card__icon">◈</div>
+          <h3 class="service-card__name">Design Only</h3>
+          <p class="service-card__price">$25</p>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-card__icon">▲</div>
+          <h3 class="service-card__name">Beard</h3>
+          <p class="service-card__price">$20</p>
+        </div>
+
+        <div class="service-card" data-tilt>
+          <div class="service-card__icon">★</div>
+          <h3 class="service-card__name">Kids Cut</h3>
+          <p class="service-card__price">$25</p>
+        </div>
+        <!-- ↑↑↑ END SERVICES ↑↑↑ -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       GALLERY
+       — Replace gallery/01.jpg–06.jpg with real photos
+  ═══════════════════════════════════════════ -->
+  <section class="section gallery" id="gallery">
+    <div class="section__inner">
+      <h2 class="section__heading">Gallery</h2>
+      <div class="gallery__grid">
+        <div class="gallery__item"><img src="gallery/01.jpg" alt="Cut design 1" loading="lazy" /></div>
+        <div class="gallery__item"><img src="gallery/02.jpg" alt="Cut design 2" loading="lazy" /></div>
+        <div class="gallery__item"><img src="gallery/03.jpg" alt="Cut design 3" loading="lazy" /></div>
+        <div class="gallery__item"><img src="gallery/04.jpg" alt="Cut design 4" loading="lazy" /></div>
+        <div class="gallery__item"><img src="gallery/05.jpg" alt="Cut design 5" loading="lazy" /></div>
+        <div class="gallery__item"><img src="gallery/06.jpg" alt="Cut design 6" loading="lazy" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <a
+        class="footer__ig"
+        href="https://www.instagram.com/r3.blendss"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="r3.blends on Instagram"
+      >
+        <svg class="footer__ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <circle cx="12" cy="12" r="4"/>
+          <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" stroke="none"/>
+        </svg>
+        @r3.blendss
+      </a>
+      <p class="footer__location">East Oakland, CA</p>
+      <p class="footer__copy">&copy; <span id="year"></span> r3.blends. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
